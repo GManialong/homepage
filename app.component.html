@@ -1,0 +1,81 @@
+<ion-content>
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+
+  <div class="body">
+    <ion-img src="assets/icon/trash.png" class="logo"></ion-img>
+    <div class="content-container">
+      <!-- This DashBoard -->
+     <div class="dashboard">
+     <p class="points">Trash Points:<br><p>0.00</p></p>
+     <button class="earn-btn">earn more</button>
+     </div>
+     <div class="map">
+<!-- This is Map -->
+    <app-map></app-map>
+    <router-outlet></router-outlet>
+     </div>
+     <!-- nav buttons -->
+     <ion-card class="-custom-card" color="light">
+     <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          
+          <ion-col size="4"><ion-button  class="custom-button" (click)="presentDataEntryBox()"><ion-icon name="notifications-outline"  size="20" class="icon"></ion-icon></ion-button></ion-col>
+          <ion-col size="4"><ion-button  class="custom-button"><ion-icon name="person-outline"  size="20" class="icon"></ion-icon></ion-button></ion-col>
+          <ion-col size="4"><ion-button  class="custom-button"><ion-icon name="reload-outline"  size="20"class="icon"></ion-icon></ion-button></ion-col>
+        </ion-row>
+      </ion-grid>
+     </ion-card-content>
+   </ion-card>
+   <div class="chart-container">
+   <div class="box box1">
+    <div class="details">
+      <h1>Bakal</h1>
+      <h2>Php 69/Kg</h2>
+    </div>
+
+    <apx-chart
+      [chart]="options.chart"
+      [series]="options.series"
+      [stroke]="options.stroke"
+      [markers]="options.markers"
+      [grid]="options.grid"
+      [tooltip]="options.tooltip"
+      [colors]="options.colors"
+    ></apx-chart>
+  </div>
+  <div class="box box2">
+    <div class="details">
+      <h1>Alloy</h1>
+      <h2>Php 69/Kg</h2>
+    </div>
+    <apx-chart
+      [chart]="options3.chart"
+      [series]="options3.series"
+      [stroke]="options3.stroke"
+      [markers]="options3.markers"
+      [grid]="options3.grid"
+      [tooltip]="options3.tooltip"
+      [colors]="options3.colors"
+    ></apx-chart>
+  </div>
+  <div class="box box3">
+    <div class="details">
+      <h1>Plastic</h1>
+      <h2>Php 69/Kg</h2>
+    </div>
+    <apx-chart
+      [chart]="plastics.chart"
+      [series]="plastics.series"
+      [stroke]="plastics.stroke"
+      [markers]="plastics.markers"
+      [grid]="plastics.grid"
+      [tooltip]="plastics.tooltip"
+      [colors]="plastics.colors"
+    ></apx-chart>
+  </div>
+</div>
+    </div>
+    
+  </div>
+</ion-content>

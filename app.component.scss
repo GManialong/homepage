@@ -1,0 +1,122 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    180deg,
+    #cff9bb 8.75%,
+    rgba(47, 128, 9, 0.58) 99.75%,
+    rgba(207, 249, 187, 0.00) 100%
+  );
+
+}
+
+ion-title {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 153px;
+  height: 63px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center child elements horizontally */
+  justify-content: center; /* Center child elements vertically */
+  margin-top: 40px;
+}
+
+.dashboard {
+  width: 80%;
+  max-width: 318px;
+  height: 87px;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid #523636;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.earn-btn {
+  width: 100px;
+  height: 28px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
+  background-color: #42a314;
+  border-radius: 20px;
+}
+
+.points {
+  color: #000;
+  font-family: Delius Unicase;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 120px;
+  padding-left: 10px;
+}
+/* Add space between icons using margin */
+.icon {
+  margin-left: 30px;
+  margin-right: 30px; /* Adjust the value as needed */
+  font-size: 24px;
+}
+.custom-button {
+  --background: rgb(130, 182, 10); /* Set the background color to black */
+  color: rgb(255, 255, 255); /* Set the text color to white */
+}
+.title {
+  color: #ffd3a5;
+  text-align: center;
+}
+.box {
+  margin: 20px;
+  padding: 25px 20px;
+  box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.08);
+  background-color: #2b2d3e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 0 1px 1px 1px #666;
+  position: relative;
+  border-radius: 20px;
+  //top:80%;
+
+  .details {
+    position: absolute;
+    color: #fff;
+    transform: scale(0.8) translate(-10px, 35px);
+   // bottom:40%;
+
+    h1,
+    h2 {
+      //font-weight: 600;
+      margin: 5px;
+    }
+  }
+}
+.box1 {
+  background-image: linear-gradient(135deg, rgb(102, 3, 105) 10%, #a9fd65 100%);
+}
+
+.box2{
+  background-image: linear-gradient(135deg,rgb(102, 3, 105) 10%, #f33100 100%);
+}
+.box3{
+  background-image: linear-gradient(135deg, rgb(102, 3, 105) 10%, #a9fd65 100%);
+}
+.chart-container{
+  background-color: #dadada;
+  border: 1px solid #000; /* You can change the color (#000) and width (2px) as needed */
+  border-radius: 20px; /* Optional: Add border-radius for rounded corners */
+}
